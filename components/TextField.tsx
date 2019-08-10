@@ -49,7 +49,7 @@ const TextField = (props: OwnProps) => {
           && form.errors.people[index]
           && form.touched.people
           && form.touched.people[index] &&
-          <div>KKKKKK</div>
+          <InputError>{form.errors.people[index].firstName}</InputError>
         }
       </label>
     </div>

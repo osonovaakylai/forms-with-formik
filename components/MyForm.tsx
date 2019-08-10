@@ -19,7 +19,7 @@ const MyForm = (props: FormikProps<FormValues>) => {
               values.people.map( (person, index) => (
                 <React.Fragment key={index}>
                   <Field name={`people.${index}.firstName`} render={(innerProps) => (
-                    <TextField {...innerProps} title="First Name"/>
+                    <TextField {...innerProps} title="First Name" index={index}/>
                   )}/>
                   <label htmlFor="pet">
                     <div>Pet</div>
