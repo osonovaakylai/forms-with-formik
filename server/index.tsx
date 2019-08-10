@@ -1,9 +1,5 @@
 import React from "react";
 import { render } from "react-dom";
-import App from "../app";
+import App from "../App";
 
-const Root: React.SFC = () => (
-    <App/>
-);
-
-render(<Root/>, document.getElementById("app"));
+render(<App/>, document.getElementById("root"));
